@@ -1,0 +1,17 @@
+#This makefile corresponds to wg_guessinggame.sh.
+
+all: README.md
+
+README.md:
+	touch README.md
+
+README.md: wg_guessinggame.sh
+	echo "# Waden Greaux's Guessing Game in Bash!" > README.md
+	echo "## This project contains the following amount of lines:" >> README.md
+	wc -l wg_guessinggame.sh | egrep -o "[0-9]+" >> README.md
+	echo "# This makefile was created on: " >> README.md
+	date >> README.md
+	 
+
+
+
