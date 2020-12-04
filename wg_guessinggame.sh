@@ -4,7 +4,7 @@
 # on the main page. Formerly in progress. Now in the process of being updated.
 
 #variables to be initalized
-answer=`ls -l | wc -l`
+answer=`ls -la | wc -l`
 guess=0
 
 #function for counting user guesses
